@@ -1,0 +1,182 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    transform: scale(1);
+    outline: none;
+    margin: 0;
+    font-family: 'Audiowide', sans-serif;
+    background: rgb(42, 42, 42);
+    color: #fafafa;
+}
+
+header {
+    display: block;
+}
+
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgb(42, 42, 42);
+    border-bottom: 9px solid rgb(68, 68, 68);
+}
+
+.site-header-inner {
+    display: flex;
+    margin: 15px 0;
+    justify-content: start;
+}
+
+.site-header-inner nav {
+  display: flex;
+  justify-content: right; /* spreads links across available space */
+  flex: 1; /* makes nav take all free horizontal space */
+  gap: 60px;
+  margin-right: 50px;
+}
+
+.site-header-inner a {
+  text-align: center;             /* centers text in each “slot” */
+  font-size: 20px;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  background-color: rgb(251, 209, 125);
+  border-radius: 10px;
+  padding-top: 10px;
+  width: 200px;
+}
+
+#control-btn {
+    color: rgb(212, 129, 107);
+    background-color: rgb(34, 34, 34);
+}
+
+#flow-control-btn {
+    color: rgb(107, 178, 178);
+    background-color: rgb(34, 34, 34);
+}
+
+#operations-btn {
+    color: rgb(135, 123, 173);
+    background-color: rgb(34, 34, 34);
+}
+
+#input-output-btn {
+    color: rgb(160, 138, 138);
+    background-color: rgb(34, 34, 34);
+}
+
+#unit-control-btn {
+    color: rgb(199, 181, 157);
+    background-color: rgb(34, 34, 34);
+}
+
+.header-logo img {
+    width: 600px;
+    height: auto;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: 340px 1fr; /* aside 250px, main takes remaining space */
+    gap: 0;
+}
+
+/* The background img */
+.main {
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+        url('1.d25af17a.webp');
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: top center; /* Keeps the image centered */
+}
+
+.main aside {
+    z-index: 51;
+    position: sticky;
+    top: 56px; /* below header */
+    align-self: start; /* ensures proper stickiness */
+    border-bottom: 9px solid rgb(68, 68, 68);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    padding: 20px;
+    background: rgb(42, 42, 42);
+    height: 100%;
+}
+
+.nav-wrap {
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+}
+
+.nav-wrap nav {
+    margin: 10px;
+}
+
+.dropdn a {
+    border-radius: 10px;
+    background-color: rgb(68, 68, 68);
+    display: flex;
+    color: inherit;
+    padding: 3px 15px;
+    margin: 10px 0;
+    gap: 3px;
+    justify-content: space-between;
+    align-items: center; /* Aligns elements horizontally */
+    flex: 1; /* grows to fill available space */
+}
+
+.dropdn .label {
+    flex: 1;                /* label takes remaining space */
+    white-space: nowrap;    /* prevents line breaks */
+}
+
+.dropdn .number {
+    margin-right: 9px;
+    padding: 7px 9px; /* vertical + horizontal */
+    color: rgb(34, 34, 34);
+    background-color: rgb(251, 209, 125);
+    border-radius: 10px;
+}
+
+.nav-btn-wrap {
+    display: flex;
+    align-items: center; /* Aligns elements horizontally */
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.img-wrap {
+    padding: 5.4px 5px;
+    border-radius: 50%;
+    background-color: rgb(68, 68, 68);
+}
+
+.img-wrap img {
+    width: 25px;
+}
+
+.main-shell {
+    margin: 60px;
+}
+
+.mlog-sections {
+    background-color: rgb(42, 42, 42);
+    border-bottom: 9px solid rgb(68, 68, 68);
+}
+
+#intro .title {
+    font-size: 120px;
+}
+
+/*
+yel
+rgb(251, 209, 125)
+
+grey
+rgb(34, 34, 34)
+rgb(42, 42, 42)
+rgb(68, 68, 68)
+*/
