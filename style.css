@@ -18,9 +18,10 @@ header {
 .site-header {
     position: sticky;
     top: 0;
-    z-index: 50;
+    z-index: 51;
     background: rgb(42, 42, 42);
     border-bottom: 9px solid rgb(68, 68, 68);
+    padding-top: 15px;
 }
 
 .site-header-inner {
@@ -48,27 +49,27 @@ header {
   width: 200px;
 }
 
-#control-btn {
+#block-control-Nav-btn {
     color: rgb(212, 129, 107);
     background-color: rgb(34, 34, 34);
 }
 
-#flow-control-btn {
+#flow-control-Nav-btn {
     color: rgb(107, 178, 178);
     background-color: rgb(34, 34, 34);
 }
 
-#operations-btn {
+#operations-Nav-btn {
     color: rgb(135, 123, 173);
     background-color: rgb(34, 34, 34);
 }
 
-#input-output-btn {
+#input-output-Nav-btn {
     color: rgb(160, 138, 138);
     background-color: rgb(34, 34, 34);
 }
 
-#unit-control-btn {
+#unit-control-Nav-btn {
     color: rgb(199, 181, 157);
     background-color: rgb(34, 34, 34);
 }
@@ -80,7 +81,7 @@ header {
 
 .main {
     display: grid;
-    grid-template-columns: 340px 1fr; /* aside 250px, main takes remaining space */
+    grid-template-columns: 400px 1fr; /* aside 250px, main takes remaining space */
     gap: 0;
 }
 
@@ -94,28 +95,37 @@ header {
 }
 
 .main aside {
-    z-index: 51;
-    position: sticky;
-    top: 56px; /* below header */
-    align-self: start; /* ensures proper stickiness */
-    border-bottom: 9px solid rgb(68, 68, 68);
-    display: grid;
-    grid-template-rows: auto 1fr auto;
+    z-index: 50;
     padding: 20px;
     background: rgb(42, 42, 42);
     height: 100%;
 }
 
-.nav-wrap {
+.main aside a {
+    font-size: 20px;
+}
+
+.main aside .desc {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.main aside .nav-wrap {
     background-color: rgb(34, 34, 34);
     border-radius: 10px;
 }
 
-.nav-wrap nav {
+.main aside .nav-wrap nav {
     margin: 10px;
 }
 
-.dropdn a {
+.left-panel-wrap {
+    width: 100%;
+    position: sticky;
+    top: 140px;
+}
+
+.dropdn-wrap a {
     border-radius: 10px;
     background-color: rgb(68, 68, 68);
     display: flex;
@@ -126,14 +136,15 @@ header {
     justify-content: space-between;
     align-items: center; /* Aligns elements horizontally */
     flex: 1; /* grows to fill available space */
+    text-decoration: none;
 }
 
-.dropdn .label {
+.dropdn-wrap .label {
     flex: 1;                /* label takes remaining space */
     white-space: nowrap;    /* prevents line breaks */
 }
 
-.dropdn .number {
+.dropdn-wrap .number {
     margin-right: 9px;
     padding: 7px 9px; /* vertical + horizontal */
     color: rgb(34, 34, 34);
@@ -152,23 +163,82 @@ header {
     padding: 5.4px 5px;
     border-radius: 50%;
     background-color: rgb(68, 68, 68);
+    border: none;
 }
 
 .img-wrap img {
     width: 25px;
 }
 
+.legal {
+    margin-top: 20px;
+}
+
 .main-shell {
     margin: 60px;
+}
+
+.main-shell .title {
+    font-size: 55px;
+    margin: 20px 0;
+}
+
+.main-shell .subtitle {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.main-shell p {
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+#intro {
+    margin-bottom: 150px;
+}
+
+#intro .title {
+    font-size: 120px;
+    margin: 0;
+    margin-top: 70px;
+}
+
+#block-control .title,
+#block-control .subtitle {
+    color: rgb(212, 129, 107);
+}
+
+#flow-control .title,
+#flow-control .subtitle {
+    color: rgb(107, 178, 178);
+}
+
+#operations .title,
+#operations .subtitle {
+    color: rgb(135, 123, 173);
+}
+
+#input-output .title,
+#input-output .subtitle {
+    color: rgb(160, 138, 138);
+}
+
+#unit-control .title,
+#unit-control .subtitle {
+    color: rgb(199, 181, 157);
+}
+
+#intro .subtitle {
+    font-size: 25px;
+    margin-top: 30px;
 }
 
 .mlog-sections {
     background-color: rgb(42, 42, 42);
     border-bottom: 9px solid rgb(68, 68, 68);
-}
-
-#intro .title {
-    font-size: 120px;
+    padding: 19px;
+    border-radius: 10px;
+    margin-bottom: 50px;
 }
 
 /*
