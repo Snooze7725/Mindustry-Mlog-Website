@@ -1,159 +1,210 @@
 
 <!DOCTYPE html>
 <html lang="en-GB">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mindustry Mlog</title>
-  <meta name="description" content="Four CSS/HTML demos combined: a brutalist landing page, a CSS-only ball animation, a CSS-only 4-page book, and a CSS-only alignment switcher." />
-  <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <!-- Simple site header for navigation between areas -->
-  <header class="site-header">
-    <div class="site-header-inner">
-      <div class="header-logo"><img src="Mindustry-logo.png" alt="Mindustry title logo"></div>
-      <nav>
-        <a href="#intro"> Intro </a>
-        <a id="block-control-Nav-btn" href="#block-control"> Block Control </a>
-        <a id="operations-Nav-btn" href="#operations"> Operations </a>
-        <a id="flow-control-Nav-btn" href="#flow-control"> Flow Control </a>
-        <a id="input-output-Nav-btn" href="#input-output"> Input & Output </a>
-        <a id="unit-control-Nav-btn" href="#unit-control"> Unit Control </a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section id="main" class="main">
-      <!-- Fixed left column -->
-      <aside>
-        <div class="left-panel-wrap">
-          <div class="desc">
-              <div class="brand">Mindustry Mlog</div>
-              <p class="strap">A coding language within mindustry that you can use for a variety of different things.</p>
-          </div>
-          <div class="nav-wrap">
-            <nav>
-              <div class="dropdn-wrap">
-
-                <div class="nav-btn-wrap">
-                  <a class="intro-dropdn" href="#intro">
-                    <span class="number"> 01 </span> 
-                    <span class="label"> Intro </span>
-                  </a>
-                  <button class="img-wrap" id="intro-btn"><img src="arrow2.png" alt="Dropdown button"></button>
-                </div>
-
-                <div class="nav-btn-wrap">
-                  <a class="block-control-dropdn" href="#block-control">
-                    <span class="number"> 02 </span> 
-                    <span class="label"> Block Control </span>
-                  </a>
-                  <button class="img-wrap" id="block-control-btn"><img src="arrow2.png" alt="Dropdown button"></button>
-                </div>
-
-                <div class="nav-btn-wrap">
-                  <a class="operations-dropdn" href="#operations">
-                    <span class="number"> 03 </span> 
-                    <span class="label"> Operations </span>
-                  </a>
-                  <button class="img-wrap" id="operations-btn"><img src="arrow2.png" alt="Dropdown button"></button>
-                </div>
-
-                <div class="nav-btn-wrap">
-                  <a class="flow-control-dropdn" href="#flow-control">
-                    <span class="number"> 04 </span> 
-                    <span class="label"> Block Control </span>
-                  </a>
-                  <button class="img-wrap" id="block-control-btn"><img src="arrow2.png" alt="Dropdown button"></button>
-                </div>
-
-                <div class="nav-btn-wrap">
-                  <a class="input-output-dropdn" href="#input-output">
-                    <span class="number"> 05 </span> 
-                    <span class="label"> Input & Output </span>
-                  </a>
-                  <button class="img-wrap" id="input-output-btn"><img src="arrow2.png" alt="Dropdown button"></button>
-                </div>
-
-                <div class="nav-btn-wrap">
-                  <a class="unit-control-dropdn" href="#unit-control">
-                    <span class="number"> 06 </span> 
-                    <span class="label"> Unit Control </span>
-                  </a>
-                  <button class="img-wrap" id="unit-control-btn"><img src="arrow2.png" alt="Dropdown button"></button>
-                </div>
-
-              </div>
-            </nav>
-          </div>
-          <div class="legal">© 2025 KESTREL • Zero JavaScript • Accessibility first</div>
-        </div>
-      </aside>
-
-      <!-- Main page (right panel) -->
-      <div class="main-shell">
-          <section id="intro">
-              <h1 class="title"> Introducing: <br> Mindustry Mlog </h1>
-              <p class="subtitle"> A way to spice up the experience. </p>
-          </section>
-
-          <section id="block-control" class="mlog-sections">
-              <h2 class="title"> Block Control </h2>
-              <div class="block-control">
-              <h2 class="subtitle"> control </h2>
-              <p> enabled - turns blocks off (0) and on (1). </p>
-              <p> shoot - makes turrets fire at a specified location. </p>
-              <p> shootp - makes turrets fire at a specified thing - enemy/player. </p>
-              <p> conifg - selects a configuration for a block - what can be selected is dependent on the block. </p>
-              <p> color - selects a color for a block. </p>
-              </div>
-          </section>
-
-          <section id="operations" class="mlog-sections">
-              <h2 class="title">Operations</h2>
-              <div class="operations">
-              <h2 class="subtitle"> set </h2>
-              <p>How in the should i do better if i havent been able to go home.</p>
-              </div>
-          </section>
-
-          <section id="flow-control" class="mlog-sections">
-              <h2 class="title">Flow Control</h2>
-              <div class="flow-control">
-              <h2 class="subtitle"> wait </h2>
-              <p>How in the should i do better if i havent been able to go home.</p>
-              </div>
-          </section>
-
-          <section id="input-output" class="mlog-sections">
-              <h2 class="title">Input & Output</h2>
-              <div class="input-output">
-              <h2 class="subtitle"> read </h2>
-              <p>How in the should i do better if i havent been able to go home.</p>
-              </div>
-          </section>
-
-          <section id="unit-control" class="mlog-sections">
-              <h2 class="title">Unit Control</h2>
-              <div class="unit-control">
-              <h2 class="subtitle"> unit bind </h2>
-              <p>How in the should i do better if i havent been able to go home.</p>
-              </div>
-          </section>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mindustry Mlog</title>
+    <meta name="description" content="Four CSS/HTML demos combined: a brutalist landing page, a CSS-only ball animation, a CSS-only 4-page book, and a CSS-only alignment switcher." />
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Simple site header for navigation between areas -->
+    <header class="site-header">
+      <div class="site-header-inner">
+        <div class="header-logo"><img src="Mindustry-logo.png" alt="Mindustry title logo"></div>
+        <nav>
+          <a href="#intro"> Intro </a>
+          <a id="block-control-Nav-btn" href="#block-control"> Block Control </a>
+          <a id="operations-Nav-btn" href="#operations"> Operations </a>
+          <a id="flow-control-Nav-btn" href="#flow-control"> Flow Control </a>
+          <a id="input-output-Nav-btn" href="#input-output"> Input & Output </a>
+          <a id="unit-control-Nav-btn" href="#unit-control"> Unit Control </a>
+        </nav>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer class="site-footer">
-    <div class="site-footer__inner">
-      <span>© 2025 Combined Demos</span>
-      <a href="#main">Back to top</a>
-    </div>
-  </footer>
-</body>
+    <main>
+      <section id="main" class="main">
+        <!-- Fixed left column -->
+        <aside>
+          <div class="left-panel-wrap">
+            <div class="desc">
+                <div class="brand">Mindustry Mlog</div>
+                <p class="strap">A coding language within mindustry that you can use for a variety of different things.</p>
+            </div>
+            <div class="nav-wrap">
+              <nav>
+                <div class="dropdn-wrap">
+                  <div>
+                    <div class="nav-btn-wrap">
+                      <a class="intro-dropdn" href="#intro">
+                        <span class="number"> 01 </span> 
+                        <span class="label"> Intro </span>
+                      </a>
+                    </div>
+                  </div>
+                  
+                  <div>
+                    <div class="nav-btn-wrap" id="block-control-wrap">
+                      <a class="block-control-dropdn" href="#block-control">
+                        <span class="number"> 02 </span> 
+                        <span class="label"> Block Control </span>
+                      </a>
+                      <button class="img-wrap" id="block-control-btn"><img src="arrow2.png" alt="Dropdown button"></button>
+                    </div>
+                    <ul class="lst">
+                      <li>Control</li>
+                      <li>Sensor</li>
+                      <li>Getlink</li>
+                      <li>Print Flush</li>
+                      <li>Draw Flush</li>
+                      <li>Radar</li>
+                    </ul>
+                  </div>
+                  
+                  <div>
+                    <div class="nav-btn-wrap">
+                      <a class="operations-dropdn" href="#operations">
+                        <span class="number"> 03 </span> 
+                        <span class="label"> Operations </span>
+                      </a>
+                      <button class="img-wrap" id="operations-btn"><img src="arrow2.png" alt="Dropdown button"></button>
+                    </div>
+                    <ul class="lst">
+                      <li>Control</li>
+                      <li>Sensor</li>
+                      <li>Getlink</li>
+                      <li>Print Flush</li>
+                      <li>Draw Flush</li>
+                      <li>Radar</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div class="nav-btn-wrap">
+                      <a class="flow-control-dropdn" href="#flow-control">
+                        <span class="number"> 04 </span> 
+                        <span class="label"> Block Control </span>
+                      </a>
+                      <button class="img-wrap" id="flow-control-btn"><img src="arrow2.png" alt="Dropdown button"></button>
+                    </div>
+                    <ul class="lst">
+                      <li>Control</li>
+                      <li>Sensor</li>
+                      <li>Getlink</li>
+                      <li>Print Flush</li>
+                      <li>Draw Flush</li>
+                      <li>Radar</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div class="nav-btn-wrap">
+                      <a class="input-output-dropdn" href="#input-output">
+                        <span class="number"> 05 </span> 
+                        <span class="label"> Input & Output </span>
+                      </a>
+                      <button class="img-wrap" id="input-output-btn"><img src="arrow2.png" alt="Dropdown button"></button>
+                    </div>
+                    <ul class="lst">
+                      <li>Control</li>
+                      <li>Sensor</li>
+                      <li>Getlink</li>
+                      <li>Print Flush</li>
+                      <li>Draw Flush</li>
+                      <li>Radar</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <div class="nav-btn-wrap">
+                      <a class="unit-control-dropdn" href="#unit-control">
+                        <span class="number"> 06 </span> 
+                        <span class="label"> Unit Control </span>
+                      </a>
+                      <button class="img-wrap" id="unit-control-btn"><img src="arrow2.png" alt="Dropdown button"></button>
+                    </div>
+                    <ul class="lst">
+                      <li>Control</li>
+                      <li>Sensor</li>
+                      <li>Getlink</li>
+                      <li>Print Flush</li>
+                      <li>Draw Flush</li>
+                      <li>Radar</li>
+                    </ul>
+                  </div>
+
+                </div>
+              </nav>
+            </div>
+            <div class="legal">© 2025 KESTREL • Zero JavaScript • Accessibility first</div>
+          </div>
+        </aside>
+
+        <!-- Main page (right panel) -->
+        <div class="main-shell">
+            <section id="intro">
+                <h1 class="title"> Introducing: <br> Mindustry Mlog </h1>
+                <p class="subtitle"> A way to spice up the experience. </p>
+            </section>
+
+            <section id="block-control" class="mlog-sections">
+                <h2 class="title"> Block Control </h2>
+                <div class="block-control">
+                <h2 class="subtitle"> control </h2>
+                <p> enabled - turns blocks off (0) and on (1). </p>
+                <p> shoot - makes turrets fire at a specified location. </p>
+                <p> shootp - makes turrets fire at a specified thing - enemy/player. </p>
+                <p> conifg - selects a configuration for a block - what can be selected is dependent on the block. </p>
+                <p> color - selects a color for a block. </p>
+                </div>
+            </section>
+
+            <section id="operations" class="mlog-sections">
+                <h2 class="title">Operations</h2>
+                <div class="operations">
+                <h2 class="subtitle"> set </h2>
+                <p>How in the should i do better if i havent been able to go home.</p>
+                </div>
+            </section>
+
+            <section id="flow-control" class="mlog-sections">
+                <h2 class="title">Flow Control</h2>
+                <div class="flow-control">
+                <h2 class="subtitle"> wait </h2>
+                <p>How in the should i do better if i havent been able to go home.</p>
+                </div>
+            </section>
+
+            <section id="input-output" class="mlog-sections">
+                <h2 class="title">Input & Output</h2>
+                <div class="input-output">
+                <h2 class="subtitle"> read </h2>
+                <p>How in the should i do better if i havent been able to go home.</p>
+                </div>
+            </section>
+
+            <section id="unit-control" class="mlog-sections">
+                <h2 class="title">Unit Control</h2>
+                <div class="unit-control">
+                <h2 class="subtitle"> unit bind </h2>
+                <p>How in the should i do better if i havent been able to go home.</p>
+                </div>
+            </section>
+
+            <footer class="site-footer">
+              <div class="site-footer__inner">
+                <span>© 2025 Combined Demos</span>
+                <a class="footerMsg" href="#main">Back to top</a>
+              </div>
+            </footer>
+        </div>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
 </html>
 
 <!-- <div class="legal">© 2025 KESTREL • Zero JavaScript • Accessibility first</div> -->

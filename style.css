@@ -9,6 +9,13 @@ body {
     font-family: 'Audiowide', sans-serif;
     background: rgb(42, 42, 42);
     color: #fafafa;
+
+    /* Background image */
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
+    url('1.d25af17a.webp');
+    background-size: cover; /* Makes the image cover the entire container */
+    background-position: top center; /* Keeps the image centered */
 }
 
 header {
@@ -19,15 +26,15 @@ header {
     position: sticky;
     top: 0;
     z-index: 51;
-    background: rgb(42, 42, 42);
-    border-bottom: 9px solid rgb(68, 68, 68);
+    background-color: rgba(26, 26, 26, 0.8);
+    border: solid 8px rgb(94, 94, 94);
     padding-top: 15px;
 }
 
 .site-header-inner {
     display: flex;
-    margin: 15px 0;
     justify-content: start;
+    padding: 15px;
 }
 
 .site-header-inner nav {
@@ -44,9 +51,29 @@ header {
   color: rgb(34, 34, 34);
   text-decoration: none;
   background-color: rgb(251, 209, 125);
-  border-radius: 10px;
   padding-top: 10px;
   width: 200px;
+}
+
+.site-header-inner a:hover {
+    background-color: rgb(219, 178, 94);
+}
+
+#block-control-Nav-btn:hover,
+#flow-control-Nav-btn:hover,
+#operations-Nav-btn:hover,
+#input-output-Nav-btn:hover,
+#unit-control-Nav-btn:hover {
+    background-color: rgb(27, 25, 25);
+}
+
+#block-control-Nav-btn,
+#flow-control-Nav-btn,
+#operations-Nav-btn,
+#input-output-Nav-btn,
+#unit-control-Nav-btn {
+    background-color: rgb(45, 45, 45);
+    border-bottom: solid 7px rgb(94, 94, 94);
 }
 
 #block-control-Nav-btn {
@@ -85,19 +112,17 @@ header {
     gap: 0;
 }
 
-/* The background img */
-.main {
-    background-image: 
-        linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
-        url('1.d25af17a.webp');
-    background-size: cover; /* Makes the image cover the entire container */
-    background-position: top center; /* Keeps the image centered */
-}
-
+/* 
+If the aside panel changes positions independent of the viewport it's because
+it only sticks when in the parent element - if you look beyond the parent, it
+won't follow
+*/
 .main aside {
     z-index: 50;
     padding: 20px;
-    background: rgb(42, 42, 42);
+    background-color: rgba(26, 26, 26, 0.8);
+    border: solid 8px rgb(94, 94, 94);
+    border-top: 0;
     height: 100%;
 }
 
@@ -117,6 +142,11 @@ header {
 
 .main aside .nav-wrap nav {
     margin: 10px;
+}
+
+.main aside .brand,
+.main aside .strap {
+    font-size: 20px;
 }
 
 .left-panel-wrap {
@@ -139,6 +169,10 @@ header {
     text-decoration: none;
 }
 
+.dropdn-wrap a:hover {
+    background-color: rgb(94, 94, 94)
+}
+
 .dropdn-wrap .label {
     flex: 1;                /* label takes remaining space */
     white-space: nowrap;    /* prevents line breaks */
@@ -159,6 +193,10 @@ header {
     gap: 10px;
 }
 
+.nav-btn-wrap button {
+    cursor: pointer;
+}
+
 .img-wrap {
     padding: 5.4px 5px;
     border-radius: 50%;
@@ -166,12 +204,40 @@ header {
     border: none;
 }
 
+.img-wrap:hover {
+    background-color: rgb(94, 94, 94);
+}
+
+.img-wrap img.rotate {
+    transform: rotate(180deg);
+}
+
 .img-wrap img {
+    transition: transform 0.37s ease;
     width: 25px;
 }
 
+#block-control-lst {
+    list-style: none;
+    padding: 0;
+}
+
+#block-control-lst li {
+    height: 40px;
+    background-color: rgb(68, 68, 68);
+    border-radius: 10px;
+    margin: 9px 10px;
+    text-indent: 10px;
+    line-height: 40px;
+}
+
+#block-control-lst li:hover {
+    background-color: rgb(94, 94, 94);
+}
+
 .legal {
-    margin-top: 20px;
+    margin-top: 30px;
+    font-size: 20px;
 }
 
 .main-shell {
@@ -234,19 +300,17 @@ header {
 }
 
 .mlog-sections {
-    background-color: rgb(42, 42, 42);
-    border-bottom: 9px solid rgb(68, 68, 68);
+    background-color: rgba(26, 26, 26, 0.8);
+    border: solid 8px rgb(94, 94, 94);
     padding: 19px;
     border-radius: 10px;
     margin-bottom: 50px;
 }
 
-/*
-yel
-rgb(251, 209, 125)
+.site-footer__inner {
+    font-size: 20px;
+}
 
-grey
-rgb(34, 34, 34)
-rgb(42, 42, 42)
-rgb(68, 68, 68)
-*/
+.footerMsg {
+    text-decoration: none;
+}
